@@ -2,13 +2,20 @@ package linkedlist;
 
 /**
  * @author jash
- * This class provids the basic structure of LinkedList.
+ * This class provids the basic structure of LinkedList node.       Singly  => |data|next|   Doubly => |prev|data|next 
  */
 public class ListNode 
 {
 	public int data;
 	private ListNode next;
+	private ListNode prev;
 	
+	public ListNode getPrev() {
+		return prev;
+	}
+	public void setPrev(ListNode prev) {
+		this.prev = prev;
+	}
 	public ListNode(int data)
 	{
 		this.data=data;

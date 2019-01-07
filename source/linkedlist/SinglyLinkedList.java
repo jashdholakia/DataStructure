@@ -7,7 +7,7 @@ package linkedlist;
  *  - Delete a node (")
  *  - Search a node
  *  - Clear  a list
- *  																									_ _    _ _
+ *  																									                                                                                             _    _        _    _
  *  ListNode class is only a node that we have and on the basis of that we have to create a LinkedList |_|_|->|_|_|
  *
  */
