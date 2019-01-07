@@ -9,18 +9,46 @@ public class StackArrayImpl {
 	{
 		fixedArrayForStack();
 		dynamicArrayForStack();
+		stackByLinkedList();
 	}
 	
+	private static void stackByLinkedList() throws Exception {
+		StackByUsingLinkedList sll = new StackByUsingLinkedList();
+		System.out.println("*********************************LL for stack*******************************************");
+		sll.push(1);
+		sll.push(2);
+		sll.push(3);
+		sll.push(4);
+		sll.push(5);
+		sll.push(6);
+		
+		System.out.println("SLL Size: "+sll.size());
+		System.out.println("SLL Top element: "+sll.top());
+		System.out.println("SLL Stack after inserting elements: "+sll.toString());
+		
+		System.out.println("SLL pop operation data: "+sll.pop());
+		sll.pop();
+		sll.pop();
+		
+		System.out.println("SLL After pop operation Size: "+sll.size());
+		System.out.println("SLL After pop operation Top element: "+sll.top());
+		System.out.println("SLL After pop operation Stack after inserting elements: "+sll.toString());
+		
+		
+	}
+
 	static void dynamicArrayForStack()throws Exception
 	{
+		
+		System.out.println("*********************************Dynamic array for stack*******************************************");
 		DynamicArrayForStack fs= new DynamicArrayForStack();
 		System.out.println("Default Capacity "+fs.capacity());
 		fs.push(1);
 		fs.push(2);
 		fs.push(3);
-	/*	fs.push(4);
+		fs.push(4);
 		fs.push(5);
-		fs.push(6);*/
+		fs.push(6);
 		
 		System.out.println("Size: "+fs.size());
 		System.out.println("Top element: "+fs.top());
@@ -38,6 +66,7 @@ public class StackArrayImpl {
 	
 	static void fixedArrayForStack() throws Exception
 	{
+		System.out.println("*********************************Fixed array for stack*******************************************");
 		FixedSizeArrayForStack fs= new FixedSizeArrayForStack();
 		System.out.println("Default Capacity "+fs.capacity());
 		fs.push(1);

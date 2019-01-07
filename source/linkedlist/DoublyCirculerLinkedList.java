@@ -1,5 +1,9 @@
 package linkedlist;
-
+/**
+ * Doubly Circuler linked list implementation.
+ * @author Jash
+ *
+ */
 public class DoublyCirculerLinkedList 
 {
 	private ListNode head;
