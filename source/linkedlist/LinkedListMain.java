@@ -6,6 +6,7 @@ public class LinkedListMain {
 	{
 		singlyLinkedList();
 		doublyLinkedList();
+		circulerLinkedList();
 	}
 	
 	public static void singlyLinkedList()
@@ -92,7 +93,7 @@ public class LinkedListMain {
 		DoublyLinkedList dll= new DoublyLinkedList();
 		ListNode removeDLLNode=null;
 			
-		System.out.println("==========================::DOUBLY LINKEDLIST OPERATIONS::===============================");
+		System.out.println("*********************************************::DOUBLY LINKEDLIST OPERATIONS::******************************************************");
 		System.out.println("before inserting a data DLL : "+dll.toString());
 		System.out.println("before inserting a data DLL Head: "+dll.getHead());
 		System.out.println("before inserting a data DLL Tail: "+dll.getTail());
@@ -153,4 +154,69 @@ public class LinkedListMain {
 		System.out.println("LinkedList after removing last element: "+dll.toString());
 		
 	}	
+	
+	public static void circulerLinkedList()
+	{
+		DoublyCirculerLinkedList dll= new DoublyCirculerLinkedList();
+		ListNode removeDLLNode=null;
+			
+		System.out.println("*******************************************************::Circuler DOUBLY LINKEDLIST OPERATIONS::*****************************************");
+		System.out.println("before inserting a data CLL : "+dll.toString());
+		System.out.println("before inserting a data CLL Head: "+dll.getHead());
+		System.out.println("before inserting a data CLL Tail: "+dll.getTail());
+		System.out.println("before inserting a data CLL Length: "+dll.getLength());
+		
+		System.out.println("=========================================================");
+		dll.insertAtBegin(new ListNode(1));
+		System.out.println("Insert At Begin a data CLL : "+dll.toString());
+		System.out.println("Insert At Begin a data CLL Head: "+dll.getHead().getData());
+		System.out.println("Insert At Begin a data CLL Tail: "+dll.getTail().getData());
+		System.out.println("Insert At Begin DLL Length: "+dll.getLength());
+		System.out.println("Insert At Begin LL Head Position: "+dll.getPosition(1));
+			
+			
+	    System.out.println("=========================================================");
+		dll.insertAtTheEnd(new ListNode(2));
+		System.out.println("Insert At Last a data CLL Tail: "+dll.getTail().getData());
+		System.out.println("Insert At Last CLL Head Position: "+dll.getPosition(1));
+		System.out.println("Insert At Last CLL Length: "+dll.getLength());
+		System.out.println("Insert At Last a data CLL : "+dll.toString());
+			
+		System.out.println("=========================================================");
+		dll.insertAtGivenPosition(2, new ListNode(3));
+		System.out.println("Insert Data At Given position 3 CLL : "+dll.toString());
+		System.out.println("Insert Data At Given position CLL Length: "+dll.getLength());
+					
+		System.out.println("=========================================================");
+		dll.insertAtGivenPosition(1, new ListNode(12));
+		System.out.println("Insert Data At Given position 12 CLL : "+dll.toString());
+		System.out.println("Insert Data At Given position CLL Length: "+dll.getLength());
+		
+		System.out.println("=========================================================");
+		dll.insertAtGivenPosition(16, new ListNode(22));
+		System.out.println("Insert Data At Given wrong position CLL : "+dll.toString());
+		System.out.println("Insert Data At Given wrong position CLL Length: "+dll.getLength());
+		System.out.println("Insert At At Given wrong position a data CLL Tail: "+dll.getTail().getData());
+		
+		System.out.println("=========================================================");
+		removeDLLNode= dll.removeNodeFromBegin();
+		System.out.println("Removed node is: "+removeDLLNode.getData());
+		System.out.println("head of the linked list: "+dll.getHead().getData());
+		System.out.println("Removed a element from head, Tail: "+dll.getTail().getData());
+		System.out.println("LinkedList after removing first element: "+dll.toString());
+			
+		System.out.println("=========================================================");
+		removeDLLNode= dll.removeNodeFromEnd();
+		System.out.println("Removed node is: "+removeDLLNode.getData());
+		System.out.println("Removed a element from tail, Tail: "+dll.getTail().getData());
+		System.out.println("length of the linked list: "+dll.getLength());
+		System.out.println("LinkedList after removing last element: "+dll.toString());
+			
+		System.out.println("=========================================================");
+		dll.removeNodeFromGivenPosition(4);
+		System.out.println("Removed a  matched data element Tail: "+dll.getTail().getData());
+		System.out.println("Removed a  matched data element head: "+dll.getHead().getData());
+		System.out.println("length of the linked list: "+dll.getLength());
+		System.out.println("LinkedList after removing last element: "+dll.toString());
+	}
 }

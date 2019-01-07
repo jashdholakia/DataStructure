@@ -115,6 +115,7 @@ public class DoublyLinkedList
 			newNode.setNext(currentNodeAtSamePosition);
 			currentNodeAtSamePosition.setPrev(newNode);
 			p.setNext(newNode);
+			newNode.setPrev(p);
 			length++;	
 		}
 	}
