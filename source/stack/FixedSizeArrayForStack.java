@@ -11,6 +11,10 @@ package stack;
  *   -isEmpty
  *   -size
  *   -capacity
+ *     _ _ _ _ _ _ 
+ *    |_|_|_|_|_|_| {LIFO}
+ *     |
+ *    TOP
  */
 public class FixedSizeArrayForStack 
 {

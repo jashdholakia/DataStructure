@@ -6,6 +6,7 @@ import linkedlist.ListNode;
  * Follow the basic structure of LinkedList and basic implementations of stack.
  * 
  * Here we take only one variable as 'Top' (No head, no tail) and will keep moving as we insert/delete Any node/data.
+ * Top always set at Head Node position.
  * @author Jash
  *
  */
