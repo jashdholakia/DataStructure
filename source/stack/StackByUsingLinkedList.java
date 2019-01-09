@@ -12,7 +12,7 @@ import linkedlist.ListNode;
  */
 public class StackByUsingLinkedList 
 {
-	private ListNode top;  // this will work as a top pointer and it will move as we insert an element.
+	private ListNode top;  // this will work as a top pointer.
 	private int length;
 	
 	public int getLength()

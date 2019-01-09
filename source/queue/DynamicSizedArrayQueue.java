@@ -4,7 +4,7 @@ public class DynamicSizedArrayQueue
 {
   private int capacity=0;
   private static final int minimumCapacity= 1 << 15;
-  private static final int defaultCapacity=4; // power of two.
+  private static final int defaultCapacity=16; // power of two.
   private int size=0;
   private int front, rear=0;
   int queueArray[];
